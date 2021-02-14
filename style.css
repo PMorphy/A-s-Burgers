@@ -2,7 +2,15 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+
+html {
   font-size: 62.5%;
+}
+
+body {
+  height: 100%;
+  font-size: 1.6rem;
 }
 
 img {
@@ -23,6 +31,7 @@ ul {
   width: 30rem;
   height: 35rem;
   padding: 4rem;
+  margin: 1rem;
 }
 
 /* Layout */
@@ -35,8 +44,6 @@ ul {
     'header'
     'main-menu'
     'footer';
-
-  background-color: rgb(231, 231, 231);
 }
 
 header {
@@ -52,7 +59,7 @@ header ul {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0 2rem 0 0;
+  padding: 0 0.7rem 0 0;
 }
 
 header ul li {
@@ -61,6 +68,7 @@ header ul li {
 
 header ul a {
   font-size: 2rem;
+  padding: 1rem;
   color: #ffc72c;
 }
 
@@ -71,8 +79,11 @@ header ul a {
 
 .main-menu {
   grid-area: main-menu;
+  width: 100%;
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
+  padding: 1rem;
 }
 
 footer {
@@ -91,4 +102,5 @@ footer ul {
 footer ul a {
   font-size: 2.1rem;
   color: #ffc72c;
+  padding: 0 1.4rem;
 }
